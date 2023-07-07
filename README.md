@@ -1,2 +1,2 @@
 # Cloud-Airlines-webapp
-Cloud-Airlines-webapp application
+Cloud-Airlines-webapp

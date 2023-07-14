@@ -8,7 +8,7 @@ docker build . -t dockerized-react
 docker build --no-cache . -t dockerized-react
 
 # running image as a container
-docker run -p 3000:3000 -d dockerized-react
+docker run -d -p 3000:80 dockerized-react
 
 # Access the app at 3000
 

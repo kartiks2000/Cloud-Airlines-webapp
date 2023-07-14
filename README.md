@@ -10,5 +10,5 @@ docker build --no-cache . -t dockerized-react
 # running image as a container
 docker run -d -p 3000:80 dockerized-react
 
-# Access the app at 3000
+# Access the app at 80
 

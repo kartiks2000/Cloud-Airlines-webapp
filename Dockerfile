@@ -1,16 +1,12 @@
-# ==== CONFIGURE =====
-# Use a Node 16 base image
-FROM node:16-alpine 
+FROM node:16-alpine as builder
 # Set the working directory to /app inside the container
 WORKDIR /app
 # Copy app files
 COPY . .
-# ==== BUILD =====
 # Install dependencies (npm ci makes sure the exact versions in the lockfile gets installed)
 RUN npm ci 
 # Build the app
 RUN npm run build
-
 
 # Bundle static assets with nginx
 FROM nginx:1.21.0-alpine as production

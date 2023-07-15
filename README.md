@@ -12,7 +12,7 @@ docker build . -t dockerized-react
 docker pull kartiksaxena2000/cloud_airlines_webapp:latest
 
 # For ARM64 processors (Apple silicon)
-docker pull kartiksaxena2000/cloud_airlines_webapp_arm64:latest
+docker pull kartiksaxena2000/cloud_airlines_webapp_mac:latest
 
 # for building from scratch (without using cached image layers)
 docker build --no-cache . -t dockerized-react

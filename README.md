@@ -9,10 +9,10 @@ docker build . -t dockerized-react
 # You can pull the existing image from docker hub
 
 # For Linux/ubuntu AMD64
-docker push kartiksaxena2000/cloud_airlines_webapp:latest
+docker pull kartiksaxena2000/cloud_airlines_webapp:latest
 
 # For ARM64 processors (Apple silicon)
-docker push kartiksaxena2000/cloud_airlines_webapp_arm64:latest
+docker pull kartiksaxena2000/cloud_airlines_webapp_arm64:latest
 
 # for building from scratch (without using cached image layers)
 docker build --no-cache . -t dockerized-react

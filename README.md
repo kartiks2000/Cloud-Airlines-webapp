@@ -21,3 +21,7 @@ docker build --no-cache . -t dockerized-react
 docker run -d -p 3000:80 dockerized-react
 
 # Access the app at http://localhost:3000
+
+
+# Logging into mysql database
+mysql -u root -p

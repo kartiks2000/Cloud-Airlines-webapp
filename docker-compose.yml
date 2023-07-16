@@ -14,7 +14,24 @@ services:
     networks:
       - cloud_airlines_net
       - cloud_airlines_data_net
-    
+  Database:
+    image: mysql:8.0
+    container_name: cloud_airlines_database
+    cap_add:
+      - SYS_NICE
+    restart: always
+    environment:
+      - MYSQL_DATABASE=admin
+      - MYSQL_ROOT_PASSWORD=12345678
+    networks:
+      - cloud_airlines_data_net
+    volumes:
+      - db:/var/lib/mysql
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+volumes:
+  db:
+    driver: local  
 
 networks:
   cloud_airlines_net:

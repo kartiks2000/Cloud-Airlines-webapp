@@ -8,7 +8,16 @@ services:
       - "3000:80"
     networks:
       - cloud_airlines_net
+  Backend:
+    image: kartiksaxena2000/cloud_airlines_backend_mac:latest
+    container_name: backend
+    networks:
+      - cloud_airlines_net
+      - cloud_airlines_data_net
+    
 
 networks:
   cloud_airlines_net:
+    driver: bridge
+  cloud_airlines_data_net:
     driver: bridge

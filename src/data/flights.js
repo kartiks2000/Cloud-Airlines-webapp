@@ -520,7 +520,7 @@ const flights = [
     price: 45617,
     currency: "SRD",
     airline: "Heller, Leannon and Swaniawski",
-    airlineLogo: "https://loremflickr.com/640/480",
+    airlineLogo: "https://images.pexels.com/photos/3224533/pexels-photo-3224533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     duration: 85030,
     cabin: "first class",
     trip: "multi city",

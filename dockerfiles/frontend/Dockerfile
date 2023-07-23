@@ -4,7 +4,7 @@ WORKDIR /app
 # Copy app files(when running in local machine)
 # COPY . . 
 # Copy app files(when running on K8s cluster)
-COPY ~/Cloud-Airlines-webapp . 
+COPY /home/ubuntu/Cloud-Airlines-webapp . 
 # Install dependencies (npm ci makes sure the exact versions in the lockfile gets installed)
 RUN npm ci 
 # Build the app
